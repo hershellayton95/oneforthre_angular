@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ButtonComponent {
   children_slot = "Button"
+  onClick() {
+    console.log("Premuto")
+  }
 }

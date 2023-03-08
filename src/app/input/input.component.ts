@@ -11,4 +11,11 @@ export class InputComponent {
   type: String = "text";
   placeholder: String = "inserisci un nome";
 
+  setValue(value: String): void {
+    this.value = value
+  }
+
+  onInput(event: Event): void {
+    this.setValue((<HTMLInputElement>event.target).value);
+  }
 }
